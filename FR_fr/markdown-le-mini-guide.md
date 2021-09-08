@@ -524,6 +524,16 @@ Comme vous le constatez, le rendu contient des parties colorées
 
 Par exemple, le rendu de ce docuument sur une des plateformes participatives utilisant *git*[^git], telles que *gitea*, *github* ou *gitlab*, n'aura pas le même rendu et n'offrira pas les mêmes possibilités d'extension que la génération de ce document en *PDF*.
 
+## L'insertion d'une table des matières
+
+`Markdown` est aussi utilisé dans les *Wikis* sur les grandes interfaces web d'utilisation de *git* que sont le site *github*, le moteur ou le site *gitlab* ou encore le moteur *gitea*, et dans les conseils donnés, souvent, apparaît l'intertion d'une table d'indexe qui est placé à l'endroit où la commande :
+
+```markdown
+	[[_TOC_]]
+```
+
+TOC signifiant évidemment *Table Of Contents*.
+
 ## L'insertion de caractères étendus
 
 Par défaut, `Markdown` se veut une version simplifiée du langage HTML utilisé dans les pages web, aussi accepte-t-il facilement les caractères étendus ...
