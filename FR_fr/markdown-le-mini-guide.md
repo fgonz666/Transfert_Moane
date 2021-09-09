@@ -56,6 +56,7 @@ Il s'est également développé des outils plus complets où via un partage de l
 	* Typora
 	* ReText
 	* Ghostwriter
+	* SublimeText
 
 Les éditeurs de texte permettent de saisir du code, c'est à dire un texte fait de caractères bruts ou codés de façon totalement universelle. Un code écrit avec n'importe quel éditeur peut être ouvert avec n'importe quel autre ou un traitement de textes ...
 
