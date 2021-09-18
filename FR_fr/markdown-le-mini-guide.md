@@ -1,4 +1,4 @@
-# `Markdown` : premier tour.
+# `Markdown` : Une vue d'ensemble.
 
 ## Qu'est-ce que `Markdown` ?
 
@@ -10,14 +10,21 @@ Pour les personnes non familières, la notion de *code source* renvoie à la pro
 
 ## Quel est l'objectif de `Markdown` ?
 
-Le but de ce langage est de faciliter la création de documents simples ou légèrement complexes en simplifiant la vie du créateur de document par une façon simple de saisir ce code source. Attention cependant, ce fonctionnement peut être très déroutant si vous pensez à la forme en même temps qu'au fond.
+Le but de ce langage est de faciliter la création de documents simples ou légèrement complexes en simplifiant la vie du créateur de document par une façon simple de saisir ce code source. Attention cependant, ce fonctionnement peut être très déroutant si vous ne dissociez pas dans votre esprit la forme et le fond ; lorsque l'on saisit le code source du document en Markdown avec un outil ultrabasique tel qu'un simple bloc-notes, le formatage n'est pas rendu immédiatement[^formatagedirect].
 
 `Markdown` n'est pas un traitement de textes au sens actuel communément admis. Il ne se comporte pas comme `Word` de *Microsoft*, `Writer` de *Libreoffice* ou encore `Pages` de *Apple*, ce langage ne se comporte pas comme ces traitements de textes classés dans la famille des **wysiwyg**[^wysiwyg] mais plutôt du **wyciwym**[^wyciwym] ; 
 il doit être compris comme un document qui contient des balises sémantiques, c'est-à-dire des marques indiquant le sens du texte écrit, encadrant ou précédent un bloc ou une ligne de texte.
 
-En découplant l'esthétique du sens, vous pouvez ainsi travailler sur le document plus librement, vous déchargeant l'esprit, en réduisant le formatage au plus simple et en se concentrant sur le sens, puis ensuite créer le document formaté. Ce découplage permet d'ailleurs d'autres aspects environnementaux intéressants, j'y reviendrai ultérieurement.
+En découplant l'esthétique du sens, vous pouvez ainsi travailler sur le document plus librement, vous déchargeant l'esprit, en réduisant le formatage au plus simple et en se concentrant sur le sens, puis ensuite créer le document formaté. Ce découplage permet d'ailleurs d'autres aspects environnementaux intéressants, j'y reviendrai ultérieurement dans [markdown et environnement]{#markdown-environnement}.
+
+Il existe d'autres formes de langages sémantiques, le plus connu est le *HTML* des pages web, qui depuis a longtemps été étendu par d'autres tels que JavaScript, PHP, etc..., et dans le domaine de la publications comment ne pas citer \LaTeX{} ou encore `asciidoc`.
 
 L'éditeur spécial markdown utilise un autre outil qu'il intègre de façon transparente pour l'utilisateur, ce que je désignerai par l'expression de *moteur de rendu*.
+
+Vous pourrez notez qu'avec le temps et la pratique au moins deux situations différentes non-exclusives s'ouvriront à vous :
+
++ vous aurez atteint un niveau suffisant de compréhension du markdown, modifiant votre perception du code que vous pourrez lire quasiment directement sans avoir besoin de rendu, je vous avoue que ça m'arrive même désormais avec \LaTeX{}.
++ vous finirez au gré des échanges par trouver un éditeur qui offrira une visualisation directe séparée -- comme ghostwriter ou retext -- ou directe -- typora, abricotine, apostrophe -- de ce que vous saisissez, certains ayant même des icônes, à la façon d'un Libreoffice ou d'un Office, pour formater.
 
 ## Le matériel nécessaire pour travailler avec `Markdown` ?
 
@@ -27,19 +34,22 @@ Foncièrement, pour éditer du `Markdown` il suffit d'un simple éditeur de text
 
 Il s'est également développé des outils plus complets où via un partage de la fenêtre en deux zones différentes.
 
+### Multiplateformes
+
+Plutôt que de les inclure dans leur système respectif, je pose ici les logiciels et leur site de référence lorsque ceux ci-sont développés sur plusieurs plateformes en reprenant les indications des sites le jour où je les ai inclus ou le jour ou je les ai revérifiés :
+
++ abricotine <http://abricotine.brrd.fr/> , MacOSX (en béta), Linux et Windows (7 ou +), attention, lorsque je l'ai compilé sur un ordinateur pour le tester, il a fallu installer *nodejs* ce qui me semble relativement lourd.
++ typora <https://typora.io> est un logiciel qui formate à la volée le code que vous saisissez
++ ghostwriter <https://wereturtle.github.io/ghostwriter/> un éditeur où s'affiche par défaut le code mais permet aussi de scinder la fenêtre en deux pour avoir le rendu à droite. C'est *aussi* celui que j'utilise.
+
 ### Sous Windows
 
 * Éditeurs simples :
 	* Bloc Notes
-* Éditeurs avec visualisateur intégré :
-	* Ghostwriter
-	* Typora
 
 ### Sous Mac OS
 
 * Éditeurs simples :
-* Éditeurs avec visualisateur intégré :
-	* Typora
 
 ### Sous Linux
 
@@ -51,26 +61,32 @@ Il s'est également développé des outils plus complets où via un partage de l
 	* Leafpad
 	* Geany
 	* Mousepad
+	* Apostrophe (partie des GNOME-Apps)
 	* GEdit
+	* Pluma
 * Éditeurs avec visualisateur intégré :
-	* Typora
 	* ReText
-	* Ghostwriter
-	* SublimeText
+	* SublimeText (demande un numéro de licence à acheter)
+	* Abricotine
+	* Apostrophe
 
 Les éditeurs de texte permettent de saisir du code, c'est à dire un texte fait de caractères bruts ou codés de façon totalement universelle. Un code écrit avec n'importe quel éditeur peut être ouvert avec n'importe quel autre ou un traitement de textes ...
 
-### Markdown et environnement : un peu de légèreté.
+### Markdown et environnement : un peu de légèreté. {markdown-environnement}
 
-L'informatique est connue pour être un secteur coûteux et *extrêmement* polluant. Tout le monde n'a pas les moyens de se payer un ordinateur récent et puissant aussi souvent que les programmes les plus *en vogue*, mais nombre d'utilisateurs ont des ordinateurs un peu voire très âgés.
+L'informatique est connue pour être un secteur coûteux et *extrêmement* polluant. Tout le monde n'a pas les moyens de se payer un ordinateur récent et puissant aussi souvent que les programmes les plus *en vogue* demandent des ressources, mais nombre d'utilisateurs ont des ordinateurs un peu voire très âgés, c'est un phénomène constaté au quotidien.
 
 Grâce à ce type d'outil que sont les éditeurs **wyciwym** vous pouvez utiliser un ordinateur même hors d'âge -- sans exagérer non plus -- pour composer le contenu ou sa plus grosse partie et compiler ensuite le rendu sur place ou sur un poste un peu plus puissant, l'éditeur étant normalement et sauf exception, un programme d'empreinte énergétique faible nécessitant des ressources matérielles modestes.
+
+L'utilisation d'un simple éditeur de textes, tels que mousepad, leafpad, gedit, emacs, kate, pluma, geany, vi(m) ... permet de travailler avec une empreinte énergétique légère. La tendance actuelle évolue cependant : on commence à avoir des éditeurs au rendu direct -- ou pas -- consommant de plus en plus de ressources énergétiques. Tant que la liberté est laissée et que chaque personne a *le choix* de pouvoir utiliser l'une ou l'autre des solutions pour composer rien ne vient me gêner.
 
 *Petite anecdote* : Je compose sur une machine de 12 ans d'âge où la seule modification a été d'augmenter la mémoire vive afin qu'il exécute un système récent.
 
 Pour produire ce document, l'éditeur qui est utilisé près de 95 % du temps utilise peu de puissance, lorsque j'ai besoin de voir le rendu, le code source de ce document est alors passé dans une moulinette automatique double qui va le transformer en document tel que vous le lisez. Certaines captures d'écran ultérieures vous montreront des exemples de code source / rendu avec l'un des logiciels que j'utilise.
 
 # Les bases de `Markdown`.
+
+Dans cette partie sont vues les principes et objectifs de `Markdown` ainsi que les éléments de base de formatage des documents avec les balises usuelles et leurs variantes.
 
 ## Généralités et objectifs
 
@@ -153,12 +169,13 @@ Une emphase faible peut se créer en encadrant une portion de texte par le symbo
 Exemple :
 
 ```markdown
-_ceci est en italique, emphase légère_ et *ceci aussi* mais *pas ceci * !
+_ceci est en italique, emphase légère_ et *ceci aussi* ¬
+ mais *pas ceci * et encore moins *ceci_ !
 ```
 
 donnera :
 
-_ceci est en italique, emphase légère_ et *ceci aussi* mais *pas ceci * !
+_ceci est en italique, emphase légère_ et *ceci aussi* mais *pas ceci * et encore moins *ceci_ !
 
 La compilation via *pdflatex* pour obtenir le document *pdf* semblant parfois avoir un comportement non conforme à celui attendu par un moteur de rendu html, la capture "Emphases faibles dans ghostwriter" vous montrera à sa droite un aperçu plus conforme à la norme `Markdown`.
 
@@ -196,7 +213,7 @@ Chaque item de la liste est donc à préfixer d'un caractère suivi d'un espace.
 
 ### Les listes non numérotées.
 
-Une liste non numérotée commence par les caractères `*` ou `-`. Ainsi on aura :
+Une liste non numérotée commence par les caractères `*`, `+` ou `-`. Ainsi on aura :
 
 ```markdown
 Ceci est une fin de paragraphe
@@ -383,7 +400,8 @@ Voici un exemple de code pour un tableau élémentaire :
 | Année | 2019 | 2020 | 2021 (prévisions) |
 | ----- | ---- | ---- | ----------------- |
 | domotique (Mt) | 123,25 | 200 | 250 |
-| électroménager (Mt) | 250 | 300 | 350 
+| électroménager (Mt) | 250 | 300 | 350 |
+| jardinage (Mt) | 102 | 155 | 201 |
 ```
 
 et voici son rendu une fois passé à la moulinette :
@@ -391,7 +409,8 @@ et voici son rendu une fois passé à la moulinette :
 | Année | 2019 | 2020 | 2021 (prévisions) |
 | ----- | ---- | ---- | ----------------- |
 | domotique (Mt) | 123,25 | 200 | 250 |
-| électroménager (Mt) | 250 | 300 | 350 
+| électroménager (Mt) | 250 | 300 | 350 |
+| jardinage (Mt) | 102 | 155 | 201 |
 
 Comme vous le voyez, ce rendu est assez intéressant : la 2e ligne indique bien qu'il s'agit d'un tableau à 4 colonnes (chaque colonne débutant et finissant par | et des - sont inscrits dedans.
 
@@ -403,7 +422,8 @@ Il est possible d'expliquer à `Markdown` comment aligner le contenu des cellule
 | Année | 2019 | 2020 | 2021 (prévisions) |
 | :----- | :----: | ---- | -----------------: |
 | domotique (Mt) | 123,25 | 200 | 250 |
-| électroménager (Mt) | 250 | 300 | 350 
+| électroménager (Mt) | 250 | 300 | 350 |
+| jardinage (Mt) | 102 | 155 | 201 | 
 ```
 
 et voici son rendu une fois passé à la moulinette :
@@ -411,7 +431,8 @@ et voici son rendu une fois passé à la moulinette :
 | Année | 2019 | 2020 | 2021 (prévisions) |
 | :----- | :----: | ---- | -----------------: |
 | domotique (Mt) | 123,25 | 200 | 250 |
-| électroménager (Mt) | 250 | 300 | 350 
+| électroménager (Mt) | 250 | 300 | 350 |
+| jardinage (Mt) | 102 | 155 | 201 |
 
 Il est bien évidemment possible de formater plus proprement et finement les tableaux grâce à des options avancées auxquelles je n'ai pas encore jeté il œil. De même, l'alignement de chaque tableau au centre provient du traitement automatique par défaut des tableau par LaTeX{} lors de la conversion.
 
@@ -437,6 +458,7 @@ texte normal qui précède la citation
 
 texte normal qui suit la citation
 ```
+
 donnera :
 
 texte normal qui précède la citation
@@ -499,8 +521,7 @@ ligne de code 3
 	while index<=10:
 		print("L'indice actuel est : ",index)
 		index+=1
-	print("merci")
-		
+	print("merci")		
 	```
 
 et voici son rendu :
@@ -514,7 +535,6 @@ et voici son rendu :
 		print("L'indice actuel est : ",index)
 		index+=1
 	print("merci")
-	
 ```
 
 Comme vous le constatez, le rendu contient des parties colorées
@@ -534,6 +554,8 @@ Par exemple, le rendu de ce docuument sur une des plateformes participatives uti
 ```
 
 TOC signifiant évidemment *Table Of Contents*.
+
+**A Noter : ** Cette table des matières ne fonctionne pas tout le temps, en l'occurrence elle fonctionne très bien sur la version de markdown *saveur* github[^githubflavoredmarkdown].
 
 ## L'insertion de caractères étendus
 
@@ -698,3 +720,7 @@ Tous ces logiciels sont l'une des licences vertueuses et libre, ils sont légale
 [^html]: HTML pour HyperText Markup Language ou langage de balisage hypertextuel, utilisé pour générer des textes transformables en liens hypertexte. C'est ce simple outil qui a permis le développement du web moderne en liant les pages les unes aux autres.
 
 [^git]: git (avec un g dur) est un système de gestion de versions de fichiers, décentralisé et très utilisé dans les milieux informatiques pour du développement en commun. <https://fr.wikipedia.org/wiki/Git>. D'après le magazine PC-World qui avait interviewé son concepteur, *git* qui est l'équivalent anglais de *connard* a été utilisé car l'auteur se considère un peu comme un sale égoïste et un connard.
+
+[^formatagedirect]: Le formatage direct fait que vous voyez ce que vous tapez, ce qui ne se fait pas forcément dans un simple bloc-notes, cependant les choses changent puisque des blocs-notes augmentés montrent un formatage visuel, à l'instar des premiers traitements de textes tels que WordStar sous MS-DOS ou 4DOS par exemple. Graphiquement des logiciels tesl que *Typora* vous montrent le rendu en même temps que vous le saisissez, d'autres tels que *Ghostwriter* ont un mode où la fenêtre est coupée en deux parties adjacentes montrant l'une le code source, l'autre le rendu actualisé en permanence.
+
+[^githubflavoredmarkdown]: Lorsque des variantes apparaissent en informatique, le terme souvent employé est le terme *flavour* -- saveur ou *fork* si le projet prend une nouvelle direction. Comme Markdown est un formatage allégé du HTML et que les spécifications n'ont pas vraiment été fixées, des développeurs ont alors implémenté des extensions de l'originale, créant par la même une saveur différente.
