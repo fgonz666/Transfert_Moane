@@ -24,7 +24,7 @@ L'éditeur spécial markdown utilise un autre outil qu'il intègre de façon tra
 Vous pourrez notez qu'avec le temps et la pratique au moins deux situations différentes non-exclusives s'ouvriront à vous :
 
 + vous aurez atteint un niveau suffisant de compréhension du markdown, modifiant votre perception du code que vous pourrez lire quasiment directement sans avoir besoin de rendu, je vous avoue que ça m'arrive même désormais avec \LaTeX{}.
-+ vous finirez au gré des échanges par trouver un éditeur qui offrira une visualisation directe séparée -- comme ghostwriter ou retext -- ou directe -- typora, abricotine, apostrophe -- de ce que vous saisissez, certains ayant même des icônes, à la façon d'un Libreoffice ou d'un Office, pour formater.
++ vous finirez au gré des échanges par trouver un éditeur qui offrira une visualisation directe séparée - comme ghostwriter ou retext - ou directe - typora, abricotine, apostrophe - de ce que vous saisissez, certains ayant même des icônes, à la façon d'un Libreoffice ou d'un Office, pour formater.
 
 ## Le matériel nécessaire pour travailler avec `Markdown` ?
 
