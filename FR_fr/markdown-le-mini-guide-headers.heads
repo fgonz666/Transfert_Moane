@@ -4,7 +4,7 @@
 \usepackage[fontsize=12pt]{fontsize}
 \usepackage{palatino}
 %\uspackage{float} % pour positionner les images ?
-\usepackage[Lenny]{fncychap}
+\usepackage[Rejne]{fncychap}
 \usepackage{hyperref}
 	\hypersetup{
 		colorlinks=true,
