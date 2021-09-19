@@ -1,0 +1,20 @@
+\usepackage[spanish]{babel}
+\usepackage[a4paper, left=20mm, right=20mm, top=20mm, bottom=20mm]{geometry}
+\usepackage{ucs}
+\usepackage[fontsize=12pt]{fontsize}
+\usepackage{palatino}
+%\uspackage{float} % pour positionner les images ?
+\usepackage[Rejne]{fncychap}
+\usepackage{hyperref}
+	\hypersetup{
+		colorlinks=true,
+		linkcolor=blue,
+		urlcolor=brown,
+		filecolor=purple,
+	}
+	\urlstyle{same}
+\renewcommand{\baselinestretch}{1.25}
+\setlength{\parskip}{1em}
+\title{Pequeña guía de aficionados de Markdown}
+\author{\textbackslash{}Moane}
+\date{El \today}

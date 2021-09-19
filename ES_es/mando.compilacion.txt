@@ -1,0 +1,1 @@
+pandoc -f markdown -t pdf markdown-le-mini-guide.md -o markdown-le-mini-guide.pdf --top-level-division=chapter --number-sections -H markdown-le-mini-guide-headers.heads -B markdown-le-mini-guide-before.tex
