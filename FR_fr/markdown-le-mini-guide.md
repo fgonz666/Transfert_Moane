@@ -1,5 +1,7 @@
 # `Markdown` : Une vue d'ensemble.
 
+Cette partie contient quelques pensées ou idées relatives à `markdown` elle est bien sûr très personnelle et peut *absolument* être rectifiée, améliorée ou nuancée par la participation de chaque auteur(e).
+
 ## Qu'est-ce que `Markdown` ?
 
 Le Langage `Markdown` est un *langage de balisage léger* c'est-à-dire un langage où est saisi un *code source* composé de texte *brut*, texte pouvant être ouvert avec tout éditeur ou traitement de textes, voire manipulé par des outils syntaxiques ou *parsers* en anglais.
@@ -21,7 +23,7 @@ Il existe d'autres formes de langages sémantiques, le plus connu est le *HTML* 
 
 L'éditeur spécial markdown utilise un autre outil qu'il intègre de façon transparente pour l'utilisateur, ce que je désignerai par l'expression de *moteur de rendu*.
 
-Vous pourrez notez qu'avec le temps et la pratique au moins deux situations différentes non-exclusives s'ouvriront à vous :
+Vous pourrez noter qu'avec le temps et la pratique au moins deux situations différentes non-exclusives s'ouvriront à vous :
 
 + vous aurez atteint un niveau suffisant de compréhension du markdown, modifiant votre perception du code que vous pourrez lire quasiment directement sans avoir besoin de rendu, je vous avoue que ça m'arrive même désormais avec \LaTeX{}.
 + vous finirez au gré des échanges par trouver un éditeur qui offrira une visualisation directe séparée - comme ghostwriter ou retext - ou directe - typora, abricotine, apostrophe - de ce que vous saisissez, certains ayant même des icônes, à la façon d'un Libreoffice ou d'un Office, pour formater.
@@ -32,7 +34,7 @@ Foncièrement, pour éditer du `Markdown` il suffit d'un simple éditeur de text
 
 *Petite anecdote* : J'utilise actuellement un simple éditeur de textes, appelé *mousepad*, qui est très simple dans ses fonctionnalités mais contient exactement celles dont j'ai besoin pour écrire ou programmer.
 
-Il s'est également développé des outils plus complets où via un partage de la fenêtre en deux zones différentes.
+Il s'est également développé des outils plus complets où via un partage de la fenêtre en deux zones différentes, certains plus lourds, d'autres aussi légers.
 
 ### Multiplateformes
 
@@ -76,13 +78,19 @@ Les éditeurs de texte permettent de saisir du code, c'est à dire un texte fait
 
 L'informatique est connue pour être un secteur coûteux et *extrêmement* polluant. Tout le monde n'a pas les moyens de se payer un ordinateur récent et puissant aussi souvent que les programmes les plus *en vogue* demandent des ressources, mais nombre d'utilisateurs ont des ordinateurs un peu voire très âgés, c'est un phénomène constaté au quotidien.
 
-Grâce à ce type d'outil que sont les éditeurs **wyciwym** vous pouvez utiliser un ordinateur même hors d'âge -- sans exagérer non plus -- pour composer le contenu ou sa plus grosse partie et compiler ensuite le rendu sur place ou sur un poste un peu plus puissant, l'éditeur étant normalement et sauf exception, un programme d'empreinte énergétique faible nécessitant des ressources matérielles modestes.
+Grâce à ce type d'outil que sont les éditeurs **wyciwym** vous pouvez utiliser un ordinateur même hors d'âge - sans exagérer non plus - pour composer le contenu ou sa plus grosse partie et compiler ensuite le rendu sur place ou sur un poste un peu plus puissant, l'éditeur étant normalement et sauf exception, un programme d'empreinte énergétique faible nécessitant des ressources matérielles modestes.
 
 L'utilisation d'un simple éditeur de textes, tels que mousepad, leafpad, gedit, emacs, kate, pluma, geany, vi(m) ... permet de travailler avec une empreinte énergétique légère. La tendance actuelle évolue cependant : on commence à avoir des éditeurs au rendu direct -- ou pas -- consommant de plus en plus de ressources énergétiques. Tant que la liberté est laissée et que chaque personne a *le choix* de pouvoir utiliser l'une ou l'autre des solutions pour composer rien ne vient me gêner.
 
 *Petite anecdote* : Je compose sur une machine de 12 ans d'âge où la seule modification a été d'augmenter la mémoire vive afin qu'il exécute un système récent.
 
-Pour produire ce document, l'éditeur qui est utilisé près de 95 % du temps utilise peu de puissance, lorsque j'ai besoin de voir le rendu, le code source de ce document est alors passé dans une moulinette automatique double qui va le transformer en document tel que vous le lisez. Certaines captures d'écran ultérieures vous montreront des exemples de code source / rendu avec l'un des logiciels que j'utilise.
+Pour produire ce document, l'éditeur qui est utilisé près de 95 % du temps utilise peu de puissance, lorsque j'ai besoin de voir le rendu, le code source de ce document est alors passé dans une moulinette automatique double qui va le transformer en document tel que vous le lisez. Certaines captures d'écran ultérieures vous montreront des exemples de code source / rendu avec l'un des logiciels que j'utilise. C'est à ce moment-là que les ressources énergétiques sont nécessaires.
+
+Ce découplage entre la saisie et la création du document formaté permet justement de réduire le besoin de ressources : si vous n'éditez plus le document en cours de création, l'énergie même modeste utilisée par l'éditeur est libérée et disponible pour la compilation et contrairement à l'idée naturelle incitant à penser que cela prend plus de temps ça n'est pas le cas.
+
+Certes, sur le moment, entre saisie et génération ces temps ne sont pas parallèles mais sont suivis, cependant, lorsqu'une machine est vraiment modeste, la saisie en même temps que son apperçu, pour de très gros documents, peut ralentir à ce point une machine que la saisie devient asynchrone avec son apperçu : qui n'a jamais connu un moment où l'ordinateur n'en peut tellement plus que vous saisissez une phrase et qu'elle apparaît en un bloc une fraction de seconde plus tard voire plusieurs secondes après ?
+
+Dans toutes les configurations, cela permet de gagner - malgré les apparences - du temps. C'est d'ailleurs une chose que nombre de gens utilisant les traitements de textes ne savent plus faire car ils n'ont pas pris ce temps en amont pour utiliser les *styles* ou définir des *modèles* pour ensuite se concentrer sur la saisie de documents ayant une homogénéité de présentation sur sa globalité.
 
 # Les bases de `Markdown`.
 
@@ -521,7 +529,7 @@ ligne de code 3
 	while index<=10:
 		print("L'indice actuel est : ",index)
 		index+=1
-	print("merci")		
+	print("merci")
 	```
 
 et voici son rendu :
@@ -550,10 +558,10 @@ Par exemple, le rendu de ce docuument sur une des plateformes participatives uti
 `Markdown` est aussi utilisé dans les *Wikis* sur les grandes interfaces web d'utilisation de *git* que sont le site *github*, le moteur ou le site *gitlab* ou encore le moteur *gitea*, et dans les conseils donnés, souvent, apparaît l'intertion d'une table d'indexe qui est placé à l'endroit où la commande :
 
 ```markdown
-	[[_TOC_]]
+[[_TOC_]]
 ```
 
-TOC signifiant évidemment *Table Of Contents*.
+`TOC` signifiant évidemment *Table Of Contents*.
 
 **A Noter : ** Cette table des matières ne fonctionne pas tout le temps, en l'occurrence elle fonctionne très bien sur la version de markdown *saveur* github[^githubflavoredmarkdown].
 
@@ -619,13 +627,44 @@ Si utilise une sortie en pdf via pdflatex et pandoc je pourrai utiliser directem
 		E_C = \dfrac{1}{2} \times m \times v^2
 	$$
 
-donnera une fois compilé :
+donnera une fois compilé (avec un passage intermédiaire par \LaTeX{} sinon il ne se passe rien du tout et vous verrez la même chose) :
 
 $$
 	E_C = \dfrac{1}{2} \times m \times v^2
 $$
 
-Je pourrai donc utiliser les balises `$$` ou `\[` ou encore un `\begin{equation}` si je souhaite que les équations soient numérotées.
+Je pourrai donc utiliser les balises `$$` ou `\[` ou encore un `\begin{equation}` si je souhaite que les équations soient numérotées, comme le code suivant :
+
+```latex
+\begin{equation}
+	\mathrm{U_{EFF}} = \mathrm{\dfrac{U_{Max}}{T}} ¬
+		\int_t^{t+T}\cos^2{\omega}{}t \quad dt
+\end{equation}
+```
+
+Donnant l'équation :
+
+\begin{equation}
+	\mathrm{U_{EFF}} = \mathrm{\dfrac{U_{Max}}{T}} \int_t^{t+T}\cos^2{\omega}{}t \quad dt
+\end{equation}
+
+pas assez compliquée à votre goût ? une petite force de couloumb pour 2 charges électriques $q_1$ et $q_2$ distantes l'une de l'autre de $d$ :
+
+```latex
+\begin{equation}
+	\overrightarrow{F_{q_1/q_2}} = -\overrightarrow{F_{q_2/q_1}} = ¬
+		\dfrac{1}{4 \pi \epsilon_0} \dfrac{q_1 \times q_2}{d^2} \quad ¬
+		\overrightarrow{u_{q_1 \rightarrow q_2}}
+\end{equation}
+```
+
+donnant :
+
+\begin{equation}
+\overrightarrow{F_{q_1/q_2}} = -\overrightarrow{F_{q_2/q_1}} = \dfrac{1}{4 \pi \epsilon_0} \dfrac{q_1 \times q_2}{d^2} \quad \overrightarrow{u_{q_1 \rightarrow q_2}}
+\end{equation}
+
+Comme vous avez pu le voir, cette fois-ci les deux équations sont numérotées.
 
 ## Créer des documents relativement complexes.
 
