@@ -15,7 +15,7 @@ Pour les personnes non familières, la notion de *code source* renvoie à la pro
 Le but de ce langage est de faciliter la création de documents simples ou légèrement complexes en simplifiant la vie du créateur de document par une façon aisée et relativement élégante de saisir ce code source. Attention cependant, ce fonctionnement peut être très déroutant si vous ne dissociez pas dans votre esprit la forme et le fond ; lorsque l'on saisit le code source du document en Markdown avec un outil ultrabasique tel qu'un simple bloc-notes, le formatage n'est pas rendu immédiatement[^formatagedirect].
 
 `Markdown` n'est pas un traitement de textes au sens actuel communément admis. Il ne se comporte pas comme `Word` de *Microsoft*, `Writer` de *Libreoffice* ou encore `Pages` de *Apple*, ce langage ne se comporte pas comme ces traitements de textes classés dans la famille des **wysiwyg**[^wysiwyg] mais plutôt du **wyciwym**[^wyciwym] ; 
-il doit être compris comme un document qui contient des balises sémantiques, c'est-à-dire des marques indiquant le sens du texte écrit, encadrant ou précédent un bloc ou une ligne de texte.
+il doit être compris comme un document qui contient des balises sémantiques, c'est-à-dire des marques indiquant le sens du texte écrit, encadrant ou précédant un bloc ou une ligne de texte.
 
 En découplant l'esthétique du sens, vous pouvez ainsi travailler sur le document plus librement, vous déchargeant l'esprit, en réduisant le formatage au plus simple et en se concentrant sur le sens, puis ensuite créer le document formaté. Ce découplage permet d'ailleurs d'autres aspects environnementaux intéressants, j'y reviendrai ultérieurement dans [markdown et environnement]{#markdown-environnement}.
 
